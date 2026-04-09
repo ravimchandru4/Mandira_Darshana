@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ಮಂದಿರ ದರ್ಶನ</title>
+  <style>
+    body { margin:0; font-family: 'Noto Sans Kannada', Arial, sans-serif; background:#0e0e0e; color:#fff; }
+    header { background:#111; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; }
+    header h1 { color:#f5b942; }
+    nav a { margin:0 10px; color:#fff; text-decoration:none; }
+    nav a:hover { color:#f5b942; }
+    section { padding:60px 20px; max-width:1100px; margin:auto; }
+    .hero { text-align:center; }
+    .hero h2 { font-size:40px; color:#f5b942; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { background:#1a1a1a; padding:20px; border-radius:10px; }
+    iframe { width:100%; height:250px; border:none; border-radius:10px; }
+    form input, form textarea { width:100%; padding:10px; margin:10px 0; border:none; border-radius:5px; }
+    form button { background:#f5b942; border:none; padding:10px 20px; cursor:pointer; }
+    footer { text-align:center; padding:20px; background:#111; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ಮಂದಿರ ದರ್ಶನ</h1>
+  <nav>
+    <a href="#home">ಮುಖಪುಟ</a>
+    <a href="#about">ಪರಿಚಯ</a>
+    <a href="#blog">ಕಥೆಗಳು</a>
+    <a href="#videos">ವೀಡಿಯೊಗಳು</a>
+    <a href="#contact">ಸಂಪರ್ಕ</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>ಪ್ರಾಚೀನ ದೇವಾಲಯಗಳ ಅನ್ವೇಷಣೆ</h2>
+  <p>ದೈವಿಕ ಕಥೆಗಳು, ರಹಸ್ಯಗಳು ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯಾಣಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.</p>
+</section>
+
+<section id="about">
+  <h2>ಚಾನೆಲ್ ಪರಿಚಯ</h2>
+  <p>ಮಂದಿರ ದರ್ಶನವು ಪ್ರಾಚೀನ ದೇವಾಲಯಗಳು, ಪೌರಾಣಿಕ ಕಥೆಗಳು ಮತ್ತು ಅಡಗಿದ ಆಧ್ಯಾತ್ಮಿಕ ಜ್ಞಾನವನ್ನು ಅನ್ವೇಷಿಸುತ್ತದೆ. ನಮ್ಮ ಉದ್ದೇಶ ದೈವಿಕ ಇತಿಹಾಸವನ್ನು ಜೀವಂತಗೊಳಿಸುವುದು.</p>
+</section>
+
+<section id="blog">
+  <h2>ದೇವಾಲಯ ಕಥೆಗಳು</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>ಕೆದಾರನಾಥದ ರಹಸ್ಯ</h3>
+      <p>ಕೆದಾರನಾಥ ದೇವಾಲಯದ ದೈವಿಕ ಶಕ್ತಿ ಮತ್ತು ಅಜ್ಞಾತ ಇತಿಹಾಸವನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ.</p>
+    </div>
+    <div class="card">
+      <h3>ತಿರುಪತಿಯ ರಹಸ್ಯಗಳು</h3>
+      <p>ಶ್ರೀ ವೆಂಕಟೇಶ್ವರ ದೇವಾಲಯದ ಹಿಂದೆ ಇರುವ ಅಡಗಿದ ಸತ್ಯಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.</p>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2>ಇತ್ತೀಚಿನ ವೀಡಿಯೊಗಳು</h2>
+  <div class="cards">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/5HZKf5_Vg_I"></iframe>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/wfNcPQbiZ3U"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="ನಿಮ್ಮ ಹೆಸರು" required>
+    <input type="email" placeholder="ನಿಮ್ಮ ಇಮೇಲ್" required>
+    <textarea placeholder="ನಿಮ್ಮ ಸಂದೇಶ" required></textarea>
+    <button type="submit">ಸಂದೇಶ ಕಳುಹಿಸಿ</button>
+  </form>
+  <p id="msg"></p>
+</section>
+
+<footer>
+  <p>© 2026 ಮಂದಿರ ದರ್ಶನ | ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ</p>
+</footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  document.getElementById('msg').innerText = "ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ನಾವು ಸ್ವೀಕರಿಸಿದ್ದೇವೆ.";
+}
+</script>
+
+</body>
+</html>
